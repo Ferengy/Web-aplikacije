@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background: rgb(87, 83, 83)
 
@@ -86,4 +87,94 @@ h1{
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     color: rgb(0, 0, 0);
+=======
+body {
+    background: rgb(87, 83, 83)
+
+}
+
+
+figure {
+    padding: 0.5em;
+    margin: 0 1em 0.5em 1em;
+    float: left;
+    width: 35%;
+    border: 1px solid black;
+}
+
+figure img {
+    width: 100%;
+}
+
+p {
+    margin: 1em;
+    line-height: 1.4em;
+    letter-spacing: 1px;
+    float: inline-end;
+    flex-wrap: wrap;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-seri
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgb(238, 128, 2) 35%, rgb(255, 0, 0) 100%);
+    box-shadow: 5px 10px rgba(238, 58, 58, 0.466);
+}
+
+li {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+li a:hover {
+    background: linear-gradient(90deg, rgb(255, 0, 0) 35%, rgb(238, 128, 2) 100%);
+
+}
+
+a img {
+    width: 25px;
+
+
+}
+
+footer ul {
+    text-align: center;
+    padding: 12px 0px;
+    width: 100%;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    margin: 0;
+
+}
+
+footer ul img {
+    width: 25px;
+}
+
+
+h1{
+    font-size: 35px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+>>>>>>> 6c5bfdaad1d284ea5155c6e4a339a8c04d499f68
 }
