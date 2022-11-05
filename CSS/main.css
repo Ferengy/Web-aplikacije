@@ -1,3 +1,9 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+
 body {
     background: rgb(87, 83, 83)
 
@@ -87,3 +93,6 @@ h1{
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
+
+
+
