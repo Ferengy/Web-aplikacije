@@ -1,7 +1,8 @@
 body {
     background-color: gray;
     font-family: 'Diablo Heavy';
-
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -29,16 +30,16 @@ a:hover {
 }
 
 .card-img-top {
-    float: left;
-    width: 50%;
-    margin: 10px 10px 10px 0;
+    width: 100%;
+
 
 }
 
 
 .solid {
     width: 100%;
-    color: #000000;
+    border-color: black;
+    box-sizing: border-box;
 }
 
 
