@@ -48,27 +48,12 @@ a:hover {
 
 
 .banner {
-    background-position: fixed;
+    background-position: center;
     background-repeat: no-repeat;
-    height: 250px;
+    height: 50vw;
     background-size: cover;
-    background-image: url('Pictures/SHODAN_hires.jpg');
-}
-
-@media only screen and (min-width: 700px) {
-    .banner {
-        height: 330px;
-        background-image: url('Pictures/SHODAN_hires.jpg');
-    }
-}
-
-@media only screen and (min-width: 990px) {
-    .banner {
-        height: 600px;
-        background-color: rgb(189, 56, 134);
-    }
-
-
+    max-height: 400px;
+    background-image: url('../Pictures/darkcity.jpg');
 }
 
 .navbar {
@@ -168,5 +153,5 @@ a:hover {
     font-family: 'Diablo Heavy';
     font-style: normal;
     font-weight: normal;
-    src: local('Diablo Heavy'), url('Fonts/Diablo Heavy.ttf') format('woff');
+    src: local('Diablo Heavy'), url('../Fonts/Diablo Heavy.ttf') format('woff');
 }
