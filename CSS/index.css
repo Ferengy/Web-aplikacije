@@ -1,8 +1,7 @@
 body {
     background-color: gray;
-    margin: 0 auto;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
+font-family: 'Diablo Heavy';}
+
 h1 {
     text-align: center;
 }
@@ -24,20 +23,21 @@ figure img {
     background-repeat: no-repeat;
     height: 250px;
     background-size: cover;
-    background-color: rgb(83, 47, 212);
+    background-color: rgb(24, 12, 196);
 }
 
 @media only screen and (min-width: 700px) {
     .banner {
-        background-color: rgb(56, 189, 100);
+        background-color: rgb(12, 196, 27);
         height: 330px;
     }
 }
 
 @media only screen and (min-width: 990px) {
     .banner {
-        height: 600px;
         background-color: rgb(189, 56, 134);
+
+        height: 600px;
     }
 
 
@@ -74,7 +74,7 @@ figure img {
     display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600) {
     .navbar a:not(:first-child) {
         display: none;
     }
@@ -85,7 +85,7 @@ figure img {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600) {
     .navbar.responsive {
         position: relative;
     }
@@ -124,5 +124,11 @@ figure img {
     height: 20px;
     width: 20px;
 
-
 }
+
+@font-face {
+    font-family: 'Diablo Heavy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Diablo Heavy'), url('Fonts/Diablo Heavy.ttf') format('woff');
+    }
