@@ -9,41 +9,48 @@
 	<meta name="author" content="Domagoj Glad">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" type="image/x-icon" href="Pictures/ico.png">
-	<link rel="stylesheet" href="CSS\main.css">
+	<link rel="stylesheet" href="CSS\index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
-	<header>
-
-		<nav id="navbar">
-			<ul>
-				<img width="100%" height="600px" src="Pictures/Diablo-1400x875.jpg" alt="Diablo">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="news.html">News</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="about.asp">About</a></li>
-				<li><a href="gallery.html">Gallery</a></li>
-			</ul>
-		</nav>
+	<header class="banner" >
 	</header>
+	<nav class="navbar" id="mynavbar">
+
+		<a href="index.html">Home</a>
+		<a href="news.html">News</a>
+		<a href="contact.html">Contact</a>
+		<a href="about.asp">About</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="javascript:void(0);" class="icon" onclick="respnavbar()">
+			<i class="fa fa-bars"></i>
+		</a>
+
+	</nav>
 
 	<main>
 		<h1>Diablo - ARPG </h1>
+
 
 		<figure><img src="Pictures\diablo2.jpg" alt="d2 chars">
 			<figcaption><b>Diablo killing Necromancer</b></figcaption>
 		</figure>
 
-		<p>Diablo is an action role-playing video game developed by Blizzard North and released by Blizzard
+		<p class="paragraph">Diablo is an action role-playing video game developed by Blizzard North and released by
+			Blizzard
 			Entertainment in January 1997, and is the first installment in the video game series of the same name.
 		</p>
 
-		<p>Set in the fictional Kingdom of Khanduras in the mortal realm, the player controls a lone hero battling to
+		<p class="paragraph">Set in the fictional Kingdom of Khanduras in the mortal realm, the player controls a lone
+			hero battling to
 			rid the world of Diablo, the Lord of Terror. Beneath the town of Tristram, the player journeys through
 			sixteen randomly generated dungeon levels, ultimately entering Hell in order to face Diablo.
 		</p>
 
-		<p>An expansion pack, Diablo: Hellfire, was released in November 1997 by Synergistic Software. In 1998,
+		<p class="paragraph">An expansion pack, Diablo: Hellfire, was released in November 1997 by Synergistic Software.
+			In 1998,
 			Electronic Arts released Diablo for the PlayStation.[10] This version, developed by Climax Studios, featured
 			direct control of the main character's direction using the PlayStation controller, as opposed to
 			point-and-click movement. A Sega Saturn version was considered by Electronic Arts but never released.[11]
@@ -52,35 +59,35 @@
 			II in 2000 and Diablo III in 2012. A third sequel, Diablo IV, is in development. In 2022 a
 			mobile-device-oriented version, Diablo Immortal, was released.
 		</p>
-
-		<p class="source">Source:
-			<a href="https://en.wikipedia.org/wiki/Diablo_(video_game)"><img src="Pictures\Wiki.png"
+		<p>Source:
+			<a href="https://en.wikipedia.org/wiki/Diablo_(video_game)"><img class="source" src="Pictures\Wiki.png"
 					alt="Wikipedia"></a>
 		</p>
-		<p class="social">Social media Diablo: <a href="https://twitter.com/Diablo"><img class="twtsoc"
-					src="Pictures\twitter.png" alt="Twitter"></a>
-			<a href="https://www.youtube.com/channel/UCxn8csYeZg6awRnZS-aqg0g"> <img src="Pictures\youtube.png"
-					alt="Youtube"></a>
+		<p>Social media Diablo: <a href="https://twitter.com/Diablo"><img class="twtsoc" src="Pictures\twitter.png"
+					alt="Twitter"></a>
+			<a href="https://www.youtube.com/channel/UCxn8csYeZg6awRnZS-aqg0g"> <img class="ytsoc"
+					src="Pictures\youtube.png" alt="Youtube"></a>
 		</p>
-
-
-
 
 	</main>
 
-	<footer>
-		<p class="social">Social media personal: <a href="https://twitter.com/ferengyquark"><img class="twtsoc"
-					src="Pictures\twitter.png" alt="Twitter"></a>
-		<nav>
-			</p>
-
-			<ul>Copyright Ⓒ 2022 Domagoj Glad <a href="https://github.com/Ferengy/Web-aplikacije"><img
-						src="Pictures\github.png" alt="GitHub"></a> </ul>
-		</nav>
+	<footer class="end">
+		<div>Copyright &copy 2022 Domagoj Glad <a href="https://github.com/Ferengy/Web-aplikacije"><img class="gitico"
+					src="Pictures\github.png" alt="GitHub"></a></div>
 	</footer>
+
+	<script>
+		function respnavbar() {
+			var x = document.getElementById("mynavbar");
+			if (x.className === "navbar") {
+				x.className += " responsive";
+			} else {
+				x.className = "navbar";
+			}
+		}
+	</script>
 
 
 </body>
 
 </html>
-

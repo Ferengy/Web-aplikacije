@@ -10,21 +10,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="Pictures/ico.png">
     <link rel="stylesheet" href="CSS\news.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
-    <header>
-        <nav> 
-            <img  width="100%" height="600px" src="Pictures/Diablo-1400x875.jpg" alt="Diablo">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="about.asp">About</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-            </ul>
-        </nav>
+    <header class="banner">
+
     </header>
+    <nav class="navbar" id="mynavbar">
+
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.asp">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="javascript:void(0);" class="icon" onclick="respnavbar()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+    </nav>
 
     <main>
         <h1>NEWS</h1>
@@ -45,7 +50,7 @@
                     revisit the beloved masterpiece with improved audio/visual fidelity and performance. <a
                         href="https://news.blizzard.com/en-us/diablo3/23624696/diablo-deep-dive-panel-recap"
                         class="btn btn-primary">More...</a></p>
-                <p style="color: rgb(0, 0, 0); font-weight: 600;">February 20, 2021</p>
+                <p>February 20, 2021</p>
 
             </div>
         </div>
@@ -71,7 +76,7 @@
                     scythe-wielding purveyor of death, the Necromancer! <a
                         href="https://news.blizzard.com/en-us/diablo4/23816540/all-hell-breaks-loose-in-2023-diablo-iv-is-coming"
                         class="btn btn-primary">More...</a></p>
-                <p style="color: rgb(0, 0, 0); font-weight: 600;">June 12, 2022</p>
+                <p>June 12, 2022</p>
 
             </div>
         </div>
@@ -95,7 +100,7 @@
                     the questions and excitement we’ve seen online and in-person that you are eager to find out more. <a
                         href="https://news.blizzard.com/en-us/diablo4/23220969/a-letter-from-our-game-director-blizzcon-2019"
                         class="btn btn-primary">More...</a></p>
-                <p style="color: rgb(0, 0, 0); font-weight: 600;">November 13, 2019</p>
+                <p>November 13, 2019</p>
                 <hr class="solid">
             </div>
         </div>
@@ -119,7 +124,7 @@
                     let's dive in. <a
                         href="https://news.blizzard.com/en-us/diablo4/23746639/diablo-iv-quarterly-update-december-2021"
                         class="btn btn-primary">More...</a></p>
-                <p style="color: rgb(0, 0, 0); font-weight: 600;">December 20, 2021</p>
+                <p>December 20, 2021</p>
                 <hr class="solid">
             </div>
         </div>
@@ -142,20 +147,31 @@
                     mind as you read on. <a
                         href="https://news.blizzard.com/en-us/diablo-immortal/23580185/our-free-to-play-approach-and-values"
                         class="btn btn-primary">More...</a></p>
-                <p style="color: rgb(0, 0, 0); font-weight: 600;">December 17, 2020</p>
+                <p>December 17, 2020</p>
                 <hr class="solid">
             </div>
         </div>
 
     </main>
 
-    <footer>
-        <a href="news.html"><button>Back on top</button></a>
-
-        <nav>
-            <ul>Copyright Ⓒ 2022 Domagoj Glad <a class="img-footer-ico"
-                    href="https://github.com/Ferengy/Web-aplikacije"><img src="Pictures\github.png" alt="GitHub"></a>
-            </ul>
-        </nav>
+    <footer class="end">
+        <div>Copyright &copy 2022 Domagoj Glad <a href="https://github.com/Ferengy/Web-aplikacije"><img class="gitico"
+                    src="Pictures\github.png" alt="GitHub"></a></div>
     </footer>
+
+    <script>
+        function respnavbar() {
+            var x = document.getElementById("mynavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+
+
+
 </body>
+
+</html>
