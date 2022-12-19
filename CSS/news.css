@@ -1,8 +1,8 @@
 body {
     background-color: gray;
     font-family: 'Diablo Heavy';
-    margin: 0;
-    padding: 0;
+
+
 
 }
 
@@ -31,16 +31,16 @@ a:hover {
 
 .card-img-top {
     width: 100%;
+}
+
+.card {
+    padding: 0px auto;
 
 
 }
 
 
-.solid {
-    width: 100%;
-    border-color: black;
-    box-sizing: border-box;
-}
+
 
 
 
@@ -60,6 +60,7 @@ a:hover {
 .navbar {
     overflow: hidden;
     background: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(230, 108, 28) 35%, rgb(255, 196, 0) 100%);
+    box-shadow: 5px 10px rgba(17, 16, 16, 0.466);
 }
 
 .navbar a {
@@ -138,8 +139,9 @@ a:hover {
     background: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(230, 108, 28) 35%, rgb(255, 196, 0) 100%);
     position: relative;
     width: 100%;
-    padding: 16px 0 14px;
+    padding: 16px 0 14px ;
     display: block;
+    box-shadow: 5px 10px rgba(17, 16, 16, 0.466);
 
 
 
