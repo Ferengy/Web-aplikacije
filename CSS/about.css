@@ -1,33 +1,8 @@
 body {
-    background-color: gray;
+    background: rgb(87, 83, 83);
     font-family: 'Diablo Heavy';
 }
 
-h1 {
-    text-align: center;
-}
-
-
-
-figure {
-    width: 50%;
-    border: 1px solid black;
-    float: left;
-
-}
-
-figure img {
-    width: 100%;
-}
-
-.banner {
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 50vw;
-    background-size: cover;
-    max-height: 400px;
-    background-image: url('../Pictures/darkcity.jpg');
-}
 
 
 .navbar {
@@ -47,29 +22,13 @@ figure img {
     font-weight: bold;
 }
 
-.navbar {
-    overflow: hidden;
-    background: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(230, 108, 28) 35%, rgb(255, 196, 0) 100%);
-}
-
-.navbar a {
-    float: left;
-    display: block;
-    color: #000000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: bold;
-}
-
 .navbar a:hover {
     background: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(230, 108, 28) 35%, rgb(255, 196, 0) 100%);
     color: rgb(0, 0, 0)
 }
 
 .navbar a.active {
-    background-color: #856bc4;
+    background-color: #04AA6D;
     color: white;
 }
 
@@ -107,6 +66,14 @@ figure img {
 }
 
 
+
+
+
+.gitico {
+    height: 20px;
+    width: 20px;
+}
+
 .end {
     text-align: center;
     overflow: hidden;
@@ -116,19 +83,10 @@ figure img {
     padding: 16px 0 14px;
     display: block;
     box-shadow: 5px 10px rgba(17, 16, 16, 0.466);
-
-
-
+    margin-top: 20px;
 }
 
-.gitico,
-.twtsoc,
-.ytsoc,
-.source {
-    height: 20px;
-    width: 20px;
 
-}
 
 @font-face {
     font-family: 'Diablo Heavy';
