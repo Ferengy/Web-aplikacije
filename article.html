@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>News</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Domagoj Glad">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="Pictures/ico.png">
+    <link rel="stylesheet" href="CSS/article.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <nav class="navbar" id="mynavbar">
+
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="javascript:void(0);" class="icon" onclick="respnavbar()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    <h1>NEWS</h1>
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="Pictures/Articlepics/d2.png" style="width:100%">
+            <div class="text">Diablo Lord of Terror</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <video src="Videos/Articlevisd/daiblo2R_trailer.mp4" style="width: 100%;" controls></video>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <video src="Videos/Articlevisd/rougetrailer.mp4" style="width:100%" controls></video>
+        </div>
+
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <hr style="height:2px; width:100%; border-width:0;color:gray;background-color:rgb(255, 0, 0)">
+
+    <h2>DIABLO II: RESURRECTED DEEP DIVE PANEL</h2>
+
+
+
+    <p>Prepare to relive the epic adventure that defined the action RPG genre for decades. Today at BlizzConline,
+        Blizzard Entertainment announced Diablo II: Resurrected, a meticulous remaster of the timeless classic Diablo II
+        and its expansion Diablo II: Lord of Destruction.</p>
+
+    <p>Remastered from the ground up by the talented team(s) at Vicarious Visions and Blizzard Entertainment, Diablo II:
+        Resurrected will reintroduce the awe of the unforgettable world of Sanctuary and its demonic hosts to a new
+        generation of gamers while allowing longtime fans to revisit the beloved masterpiece with improved audio/visual
+        fidelity and performance.</p>
+
+    <p>We surprised MrLlamaSC, renowned Diablo II speedrunner and former StarCraft II professional caster, with the
+        reveal trailer a little while back. His reaction galvanizes our excitement to share more with you today. Tune
+        into the Diablo II: Resurrected Deep Dive below, as MrLlamaSC chats with Andre Abrahamiam (Game Designer,
+        Blizzard), Rob Gallerani (Principal Designer, Vicarious Visions), and Chris Amaral (Lead Artist, Blizzard) on
+        their journey to honor this fan favorite’s legacy.</p>
+
+    <p>Evil Has Survived. To relive Diablo II unlike ever before, opt in for the chance to be in the upcoming Diablo II:
+        Resurrected PC Technical Alpha and possible future tests.
+    </p>
+
+
+    <p>Diablo II: Resurrected has been a labor of love, developed by passionate fans that experienced this world of
+        Sanctuary more than 20 years ago. We hope the community is as excited as we are for what is to come because we
+        cannot wait to share more!</p>
+
+    <p>February 20, 2021</p>
+
+    <p>Source: <a href="https://news.blizzard.com/en-us/diablo3/23624696/diablo-deep-dive-panel-recap">Blizzard</a></p>
+    <a href="news.html">Back to news</a>
+
+    <footer class="end">
+        <div>Copyright &copy 2022 Domagoj Glad <a href="https://github.com/Ferengy/Web-aplikacije"><img class="gitico"
+                    src="Pictures\github.png" alt="GitHub"></a></div>
+    </footer>
+
+
+    <script>
+        function respnavbar() {
+            var x = document.getElementById("mynavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+    </script>
+</body>
+
+</html>

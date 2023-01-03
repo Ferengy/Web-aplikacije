@@ -1,0 +1,170 @@
+body {
+    background-color: gray;
+    font-family: 'Diablo Heavy';
+}
+
+.navbar {
+    overflow: hidden;
+    background: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(230, 108, 28) 35%, rgb(255, 196, 0) 100%);
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(230, 108, 28) 35%, rgb(255, 196, 0) 100%);
+    color: rgb(0, 0, 0);
+    box-shadow: 5px 10px rgba(17, 16, 16, 0.466);
+
+}
+
+.navbar a.active {
+    background-color: #856bc4;
+    color: white;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive {
+        position: relative;
+    }
+
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+.end {
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(230, 108, 28) 35%, rgb(255, 196, 0) 100%);
+    position: relative;
+    width: 100%;
+    padding: 16px 0 14px;
+    display: block;
+    box-shadow: 5px 10px rgba(17, 16, 16, 0.466);
+}
+
+@media screen and (max-width: 900px) {
+    figure {
+        width: 90%;
+        margin: 1em;
+    }
+}
+
+.gitico {
+    height: 20px;
+    width: 20px;
+}
+
+@font-face {
+    font-family: 'Diablo Heavy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Diablo Heavy'), url('../Fonts/Diablo Heavy.ttf') format('woff');
+}
+
+
+* {
+    box-sizing: border-box
+}
+
+.slideshow-container {
+    max-width: 700px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(216, 219, 12);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(61, 56, 56, 0.8);
+}
+
+.text {
+    color: rgb(216, 219, 12);
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.numbertext {
+    color: rgb(216, 219, 12);
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}

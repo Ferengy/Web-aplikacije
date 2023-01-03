@@ -8,7 +8,8 @@ body {
 .navbar {
     overflow: hidden;
     background: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(230, 108, 28) 35%, rgb(255, 196, 0) 100%);
-    box-shadow: 5px 10px rgba(17, 16, 16, 0.466);
+    
+
 }
 
 .navbar a {
@@ -24,7 +25,10 @@ body {
 
 .navbar a:hover {
     background: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(230, 108, 28) 35%, rgb(255, 196, 0) 100%);
-    color: rgb(0, 0, 0)
+    color: rgb(0, 0, 0);
+    box-shadow: 5px 10px rgba(17, 16, 16, 0.466);
+
+
 }
 
 .navbar a.active {
@@ -64,6 +68,18 @@ body {
         text-align: left;
     }
 }
+
+
+
+
+@media screen and  (max-width: 600px){
+    video{
+        max-width: 70%;
+    }
+    
+}
+
+
 
 
 
