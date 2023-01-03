@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>News</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Domagoj Glad">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="Pictures/ico.png">
+    <link rel="stylesheet" href="CSS/article.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <nav class="navbar" id="mynavbar">
+
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="javascript:void(0);" class="icon" onclick="respnavbar()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    <h1>NEWS</h1>
+
+
+    <div class="slideshow-container">
+
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="Pictures/Articlepics/diablo 4.png" style="width:100%">
+            <div class="text">Boss battle</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="Pictures/Articlepics/darksummon.png" style="width:100%">
+            <div class="text">Dark place</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="Pictures/Articlepics/necroarmy.jpg" style="width:100%">
+            <div class="text">Necromancer and his army</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="Pictures/Articlepics/village.png" style="width:100%">
+            <div class="text">New Tristram</div>
+        </div>
+
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <hr style="height:2px; width:100%; border-width:0;color:gray;background-color:rgb(255, 0, 0)">
+
+    <h2>ALL HELL BREAKS LOOSE IN 2023—DIABLO IV IS COMING</h2>
+
+
+
+    <p>During the 2022 Xbox Games Showcase Event we told the story of an unremitting conflict between the Burning Hells
+        and High Heavens, foretold the return of Lilith, Sanctuary’s demonic creator, and shared scorching-hot details
+        around the next installment in the Diablo saga—Diablo IV.</p>
+
+    <p>Remastered from the ground up by the talented team(s) at Vicarious Visions and Blizzard Entertainment, Diablo II:
+        Resurrected will reintroduce the awe of the unforgettable world of Sanctuary and its demonic hosts to a new
+        generation of gamers while allowing longtime fans to revisit the beloved masterpiece with improved audio/visual
+        fidelity and performance.Before you read further, we are excited to announce that Diablo IV will launch in 2023
+        on Windows PC, Xbox One X|S, Xbox Series X|S, PlayStation 4/5 and will host cross-play and cross-progression for
+        all platforms. On console, players may also slay demons side-by-side with a friend through couch-co-op. We have
+        another bone-chilling announcement: in addition to the Barbarian, Druid, Rogue, and Sorceress, the fifth and
+        final class available at launch is the scythe-wielding purveyor of death, the Necromancer!</p>
+
+    <p>If the flames of our hellish segment of the showcase died down before you could gaze upon them, do not fret, we
+        have provided all the invitingly dark details below. Grab a spot around the campfire as we shed some light on
+        Diablo IV!</p>
+
+    <p>EviAs a Priest of Rathma, known by outsiders as a Necromancer—the word death evokes a sensation of power,
+        potentially even excitement when it graces their ear. These legendary summoners bend blood, bone, and darkness
+        to their will, and subjugate the ranks of the undead to carry out their bidding. Unknowing adversaries who pick
+        a fight with this death-defying class will quickly learn they’ve made a grave mistake, for they are darkness in
+        its wake.
+    </p>
+
+
+    <p>We have a casket-full of news to share with you around how the Necromancer class will decimate and reanimate
+        demons in Diablo IV. Take a gander at our June 2022 Diablo IV Quarterly Update blog coming out tomorrow at 10
+        a.m. PDT to learn more about the class’s new mechanics, such as the Book of the Dead, with Lead Class Designer,
+        Adam Jackson.</p>
+
+    <p>February 20, 2021</p>
+
+    <p>Source: <a href="https://news.blizzard.com/en-us/diablo3/23624696/diablo-deep-dive-panel-recap">Blizzard</a></p>
+    <a href="news.html">Back to news</a>
+
+    <footer class="end">
+        <div>Copyright &copy 2022 Domagoj Glad <a href="https://github.com/Ferengy/Web-aplikacije.git"><img
+                    class="gitico" src="Pictures\github.png" alt="GitHub"></a></div>
+    </footer>
+
+
+    <script>
+        function respnavbar() {
+            var x = document.getElementById("mynavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+    </script>
+</body>
+
+</html>
