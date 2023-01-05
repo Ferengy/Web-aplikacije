@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>News</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Domagoj Glad">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="Pictures/ico.png">
+    <link rel="stylesheet" href="CSS/article.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <nav class="navbar" id="mynavbar">
+
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="javascript:void(0);" class="icon" onclick="respnavbar()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    <h1>NEWS</h1>
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 2</div>
+            <img src="Pictures/Articlepics/lilith.jpg" style="width:100%">
+            <div class="text">Lilith daughter of Mephisto</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 2</div>
+            <img src="Pictures/Articlepics/lilithver2.jpg" style="width:100%">
+            <div class="text">Lilith mother of nephalem</div>
+        </div>
+
+      
+
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <hr style="height:2px; width:100%; border-width:0;color:gray;background-color:rgb(255, 0, 0)">
+
+    <h2>A LETTER FROM OUR GAME DIRECTOR – BLIZZCON 2019</h2>
+
+
+
+    <p>Dear Diablo family,
+
+        Thank you all for a great BlizzCon. We unveiled Diablo IV with our announce cinematic, establishing the tone for
+        our overall creative vision moving forward. We hope you all dug that.</p>
+
+    <p>We also showed you our gameplay trailer, showcasing our classes, monsters, and open world, and invited you to
+        take the first step in this journey toward Diablo IV together. We can tell from all the questions and excitement
+        we’ve seen online and in-person that you are eager to find out more.</p>
+
+    <p>The lines to our demo stations and Dark Gallery were packed all weekend long and we were floored by the overall
+        reception—especially from long-time Diablo players. We were blown away by how often we met people who came back
+        to play the demo again and again. The stories you shared with us about Diablo and what this series means to you
+        moved us and inspire us to do our best.</p>
+
+    <p>We’ve been taking this week to assess and discuss our takeaways from BlizzCon, and we love all the deep
+        discussions happening around the art, features, systems, and world of Diablo IV. We’re also excited about a cool
+        update we’re planning for you in February of next year. It will be the first in a series of quarterly updates
+        where we’ll share behind-the-scenes looks at our progress going forward.
+    </p>
+
+    <p>We also know that one topic is burning hotter than the rest. We want you to know that we are having the same
+        conversations about items and stats that you are having—whether on the official discussion threads or external
+        sites, we read it all! Getting this right is at the top of our minds, and in the coming weeks our lead systems
+        designer David Kim will provide a few clarifications, share some of his thoughts, and address some of your open
+        questions. We hope you check it out and let us know what you think</p>
+    <p>We also know that one topic is burning hotter than the rest. We want you to know that we are having the same
+        conversations about items and stats that you are having—whether on the official discussion threads or external
+        sites, we read it all! Getting this right is at the top of our minds, and in the coming weeks our lead systems
+        designer David Kim will provide a few clarifications, share some of his thoughts, and address some of your open
+        questions. We hope you check it out and let us know what you think</p>
+
+    <p>November 13, 2019</p>
+
+    <p>Source: <a href="https://news.blizzard.com/en-us/diablo3/23624696/diablo-deep-dive-panel-recap">Blizzard</a></p>
+    <a href="news.html">Back to news</a>
+
+    <footer class="end">
+        <div>Copyright &copy 2022 Domagoj Glad <a href="https://github.com/Ferengy/Web-aplikacije.git"><img
+                    class="gitico" src="Pictures\github.png" alt="GitHub"></a></div>
+    </footer>
+
+
+    <script>
+        function respnavbar() {
+            var x = document.getElementById("mynavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+    </script>
+</body>
+
+</html>

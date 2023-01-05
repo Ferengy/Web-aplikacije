@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>News</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Domagoj Glad">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="Pictures/ico.png">
+    <link rel="stylesheet" href="CSS/article.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <nav class="navbar" id="mynavbar">
+
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="javascript:void(0);" class="icon" onclick="respnavbar()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    <h1>NEWS</h1>
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 1</div>
+            <img src="Pictures\darkcity.jpg" style="width:100%">
+            <div class="text">Dark city</div>
+        </div>
+
+  
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <hr style="height:2px; width:100%; border-width:0;color:gray;background-color:rgb(255, 0, 0)">
+
+    <h2>OUR FREE TO PLAY APPROACH AND VALUES
+    </h2>
+
+
+
+    <p>We know one of the outstanding questions about the game is: What is the business model for Diablo Immortal?
+        Getting this right for players is important to our team, and today we want to share how we’re coming at this for
+        Immortal—what it is, the values behind it, and how it works in practice.</p>
+
+    <p>Before we dig in, we’ll be referencing several game systems in this blog, so we highly recommend checking out our
+        gameplay blogs first. Understanding how these systems work is useful to keep in mind as you read on.</p>
+
+    <p>Diablo Immortal will be free-to-play with optional in-app purchases. We plan on supporting Diablo Immortal with a
+        constant cadence of free content, including new gear, features, classes, stories, and areas to explore. We also
+        want to make sure every purchase feels fair and is guided by a clear set of values that place an emphasis on the
+        player experience for all players.</p>
+
+    <p>First and foremost of these values is gameplay first. Core mechanics are designed to be fun first, and purchases
+        should never circumvent Diablo’s core gameplay – killing demons and getting gear! There should also be a pathway
+        to earn most things you can pay for. And critically important is that the only way to acquire gear is by playing
+        the game.
+    </p>
+
+    <p>Second, we want to provide purchase options that feel worthwhile and deepen your engagement and enjoyment of the
+        game, and where possible the enjoyment of other players as well. Purchases should not detract from your gameplay
+        experience.
+
+        Third, purchases should feel like a bonus, and entirely optional to enjoy Immortal. The core Diablo Immortal
+        game experience will always be free, and you should be able to enjoy the game for hours on end whether or not
+        you choose to spend money.</p>
+
+    <p>December 20, 2021</p>
+
+    <p>Source: <a href="https://news.blizzard.com/en-us/diablo3/23624696/diablo-deep-dive-panel-recap">Blizzard</a></p>
+    <a href="news.html">Back to news</a>
+
+    <footer class="end">
+        <div>Copyright &copy 2022 Domagoj Glad <a href="https://github.com/Ferengy/Web-aplikacije.git"><img
+                    class="gitico" src="Pictures/github.png" alt="GitHub"></a></div>
+    </footer>
+
+
+    <script>
+        function respnavbar() {
+            var x = document.getElementById("mynavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+    </script>
+</body>
+
+</html>
